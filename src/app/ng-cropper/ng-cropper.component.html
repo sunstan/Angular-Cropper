@@ -1,0 +1,28 @@
+<div class="cp-wrapper">
+    
+    <div class="cp-card">
+        
+        <ng-container *ngIf="cropper.image">
+            
+            <app-preview class="cp-card-content"></app-preview>
+            
+            <app-controls class="cp-card-body cp-padding-top" [class.inline]="!slider"
+                          *ngIf="controls"></app-controls>
+        
+        </ng-container>
+        
+        <ng-container *ngIf="!cropper.image">
+            
+            <div class="cp-card-content"><app-dropzone></app-dropzone></div>
+        
+        </ng-container>
+        
+        <div class="cp-card-body cp-padding-top">
+            <button (click)="onCancel()" class="cp-btn cp-btn-secondary">Annuler</button>
+            <button (click)="onSubmit()" class="cp-btn cp-btn-primary" *ngIf="cropper.image">Valider</button>
+        </div>
+    
+    </div>
+    
+</div>
+

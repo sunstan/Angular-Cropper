@@ -1,0 +1,7 @@
+<div *ngIf="error">{{ error }}</div>
+
+<div *ngIf="!error" #dropzone class="cp-dropzone" [class.cropper-dropping]="dropping">
+    <span>{{text}}</span>
+    <label for="input" class="cp-btn cp-btn-primary cp-btn-rounded">{{btn}}</label>
+    <input id="input" type="file" accept="image/*" hidden #input>
+</div>

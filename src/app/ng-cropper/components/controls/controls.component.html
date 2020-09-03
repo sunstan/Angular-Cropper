@@ -1,0 +1,38 @@
+<ng-container *ngIf="cropper.config.scallable">
+    
+    <span
+        class="material-icons cp-btn-icon"
+        (click)="cropper.scale(cropper.range - 10)">
+        remove_circle_outline</span>
+
+    <input
+        (input)="cropper.scale($event.target['value'])"
+        *ngIf="cropper.config.slider"
+        [value]="cropper.range"
+        class="cp-range"
+        type="range"
+        max="100"
+        step="1"
+        min="0">
+    
+    <span
+        class="material-icons cp-btn-icon"
+        (click)="cropper.scale(cropper.range + 10)">
+        add_circle_outline</span>
+    
+</ng-container>
+
+<ng-container *ngIf="cropper.config.rotation">
+    
+    <span
+        class="material-icons cp-btn-icon"
+        (click)="cropper.rotate(-90)">
+        rotate_left</span>
+    
+    <span
+        class="material-icons cp-btn-icon"
+        (click)="cropper.rotate(90)">
+        rotate_right</span>
+
+</ng-container>
+

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*:not(.material-icons) {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+
+.cp-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(#F0F0F0, .5);
+}
+
+
+
+.cp-card {
+    padding: 24px;
+    max-width: 100%;
+    overflow: hidden;
+    min-width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    transition: padding ease-in-out .2s;
+
+    * {
+        user-select: none;
+    }
+}
+
+.cp-card-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cp-card-content {
+    max-width: 100%;
+}
+
+
+
+.cp-range {
+    width: 100%;
+    margin: 0 6px;
+    min-width: 50px;
+}
+
+.cp-preview {
+    overflow: hidden;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    canvas {touch-action: none;}
+}
+
+.cp-draggable {
+    cursor: move;
+}
+
+.cp-padding-top {
+    padding-top: 24px;
+    transition: padding ease-in-out .2s;
+}
+
+
+
+.cp-dropzone {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 4px;
+    border: 2px dashed lightgray;
+    background-color: transparent;
+    transition: all ease-in-out .2s;
+
+    span {margin-bottom: 10px;}
+}
+
+.cp-dropping {
+    border-color: dodgerblue;
+    background-color: rgba(dodgerblue, .1);
+    * {pointer-events: none;}
+}
+
+
+
+.cp-btn {
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    transition: all ease-in-out .2s;
+}
+
+.cp-btn-icon {
+    width: 40px;
+    margin: 0 5px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: gray;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all ease-in-out .2s;
+
+    &:hover {
+        color: black;
+        background-color: #F0F0F0;
+    }
+}
+
+.cp-btn-primary {
+    color: white;
+    background-color: dodgerblue;
+}
+
+.cp-btn-secondary {
+    color: gray;
+    border: 1px solid gray;
+}
+
+
+
+@media all and (max-width: 400px) {
+    .cp-dropzone {
+        border: none;
+        span {display: none};
+    }
+    .cp-range {
+        display: none;
+    }
+    .cp-padding-top {
+        padding-top: 10px;
+    }
+    .cp-card {
+        padding: 10px;
+    }
+}

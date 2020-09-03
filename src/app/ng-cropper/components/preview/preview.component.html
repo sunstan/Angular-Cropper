@@ -1,0 +1,11 @@
+<div #preview class="cp-preview" (window:resize)="onResize()">
+    <canvas
+        #canvas
+        (Drag)="onDrag($event)"
+        (DragEnd)="onDragEnd($event)"
+        [appDraggable]="cropper.config.draggable"
+        [appScrollable]="cropper.config.scrollable"
+        [class.cropper-draggable]="cropper.config.draggable"
+        (scrollY)="cropper.scale(cropper.range - ($event / 5))">
+    </canvas>
+</div>
