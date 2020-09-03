@@ -1,6 +1,7 @@
 # Cropper
 
 Module de rognage photo inspiré de Twitter.
+
 Démo : https://ng-cropper.herokuapp.com/
 
 ## Development server
