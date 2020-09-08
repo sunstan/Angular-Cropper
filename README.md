@@ -1,8 +1,14 @@
 # Cropper
 
-Module de rognage photo inspiré de Twitter.
+Profil picture cropper inspired by Twitter
 
 Démo : https://ng-cropper.herokuapp.com/
+
+## Getting Started
+```
+git clone https://github.com/sunstan/Angular-Cropper
+cd Angular-Cropper
+```
 
 ## Development server
 
