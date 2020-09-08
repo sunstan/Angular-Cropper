@@ -2,7 +2,13 @@
 
 Profil picture cropper inspired by Twitter
 
-Démo : https://ng-cropper.herokuapp.com/
+**Démo :** https://ng-cropper.herokuapp.com/
+
+![1](https://i.imgur.com/8a5jHBX.jpg)
+![2](https://i.imgur.com/xW9dj2G.jpg)
+![3](https://i.imgur.com/tPWlOfu.jpg)
+![4](https://i.imgur.com/rV6T5Fj.jpg)
+![5](https://i.imgur.com/KEcg30W.jpg)
 
 ## Getting Started
 ```
